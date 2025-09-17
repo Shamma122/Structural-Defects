@@ -69,18 +69,5 @@ if st.button('Generate Report'):
                    file_name = 'structural_defect_report.txt',
                    mime = 'text/plain')
 
-# Save the report to a text file
-with open("structural_defect_report.txt", "w") as file:
-            file.write(response.text)
-        
-        # Provide a download button for the report
-with open("structural_defect_report.txt", "rb") as file:
-            btn = st.download_button(
-                label="DOWNLOAD REPORT",
-                data=file,
-                file_name="structural_defect_report.txt",
-                mime="text/plain"
-            )
-
 
 
